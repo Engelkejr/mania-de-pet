@@ -75,16 +75,7 @@ const SERVICES = [
     border: "border-purple-200",
     badge: "bg-purple-100 text-purple-700",
   },
-  {
-    emoji: "🛁",
-    title: "Banho & Tosa",
-    description: "Ambiente climatizado, toalhas individuais e muito carinho. Seu pet sai cheiroso e elegante!",
-    items: ["Banho completo", "Tosa higiênica e na tesoura", "Hidratação capilar", "Perfume especial"],
-    color: "from-sky-50 to-blue-50",
-    border: "border-sky-200",
-    badge: "bg-sky-100 text-sky-700",
-    highlight: true,
-  },
+
   {
     emoji: "🛍️",
     title: "Pet Shop & Farmácia",
@@ -114,14 +105,6 @@ const TESTIMONIALS = [
     color: "bg-purple-500",
   },
   {
-    name: "Fernanda Costa",
-    rating: 5,
-    text: "O serviço de banho e tosa é impecável. Minha Lola sempre volta linda e cheirosa. O pessoal trata como se fosse pet deles!",
-    pet: "tutora da Lola 🐩",
-    initial: "F",
-    color: "bg-pink-500",
-  },
-  {
     name: "Roberto S.",
     rating: 5,
     text: "Preço justo e atendimento de primeira. Eles têm de tudo: vacinas, remédios, ração... Não preciso ir em outro lugar!",
@@ -133,7 +116,7 @@ const TESTIMONIALS = [
 
 const DIFFERENTIALS = [
   { emoji: "⭐", title: "4.9 no Google", subtitle: "Avaliação dos tutores", desc: "Mais de 100 avaliações 5 estrelas de tutores da região da Ilha do Governador." },
-  { emoji: "🏠", title: "Tudo em Um Lugar", subtitle: "Clínica + Pet Shop", desc: "Não precisa correr de um lado para outro. Consulta, vacina, banho e ração no mesmo endereço." },
+  { emoji: "🏠", title: "Tudo em Um Lugar", subtitle: "Clínica + Pet Shop", desc: "Não precisa correr de um lado para outro. Consulta, vacina, e ração no mesmo endereço." },
   { emoji: "❤️", title: "Atendimento Humanizado", subtitle: "Tratamos com amor", desc: "Nossa equipe trata cada pet como se fosse o seu. Porque para nós, eles são família." },
   { emoji: "📍", title: "Super Acessível", subtitle: "Ilha do Governador", desc: "Localização privilegiada na Estrada de Maracajás. Fácil acesso e estacionamento próximo." },
   { emoji: "📅", title: "Agendamento Fácil", subtitle: "Via WhatsApp", desc: "Marque sua consulta em segundos pelo WhatsApp, sem filas ou esperas desnecessárias." },
@@ -292,10 +275,7 @@ export default function ManiadePetLanding() {
                 {" "}— tudo em um só lugar 🐾
               </h1>
 
-              <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Consultas, vacinação, banho & tosa e farmácia pet na{" "}
-                <strong className="text-gray-800">Mania de Pet</strong>. Porque a saúde e a felicidade do seu bichinho não podem esperar.
-              </p>
+            
 
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -629,7 +609,7 @@ export default function ManiadePetLanding() {
             <div>
               <div className="font-black mb-3 text-sm uppercase tracking-wide text-gray-300">Serviços</div>
               <ul className="space-y-2 text-gray-400 text-sm">
-                {["Consultas & Exames", "Vacinação", "Banho & Tosa", "Farmácia Pet", "Acessórios"].map((s) => (
+                {["Consultas & Exames", "Vacinação", "Farmácia Pet", "Acessórios"].map((s) => (
                   <li key={s}><button onClick={() => scrollTo("serviços")} className="hover:text-teal-400 transition-colors">{s}</button></li>
                 ))}
               </ul>
