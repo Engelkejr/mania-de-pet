@@ -254,7 +254,7 @@ export default function GenericLandingPage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-500">
                   o seu problema
                 </span>
-                {" "}— rápido e eficiente 🚀
+                {" "} rápido e eficiente 🚀
               </h1>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -412,7 +412,7 @@ export default function GenericLandingPage() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-xs">
-          © 2025 Sua Marca — Todos os direitos reservados.
+          © 2025 Sua Marca - Todos os direitos reservados.
         </div>
       </footer>
 
